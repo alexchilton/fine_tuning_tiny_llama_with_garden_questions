@@ -1,0 +1,281 @@
+{
+  "summary": {
+    "bleu": 0.025392743097891524,
+    "rouge1": 0.315521187742134,
+    "rougeL": 0.2194072485397234,
+    "meteor": 0.2053926941701732,
+    "count": 30
+  },
+  "individual_results": [
+    {
+      "instruction": "What are the easiest vegetables to grow at home?",
+      "expected": "Lettuce, radishes, green beans, and cherry tomatoes are easy vegetables to grow at home. They need minimal care, sunlight, and regular watering, making them great for beginners and small spaces.",
+      "generated": "Easy to grow vegetables include lettuce, radishes, radishes, carrots, cucumbers, beans, peas, beets, spinach, tomatoes, peppers, onions, and broccoli.",
+      "bleu": 0.015883836669836015,
+      "rouge1": 0.3673469387755102,
+      "rougeL": 0.2040816326530612,
+      "meteor": 0.18409385813148788
+    },
+    {
+      "instruction": "How often should I water mybgarden?",
+      "expected": "Water your garden once or twice a week, allowing the soil to dry slightly between waterings.",
+      "generated": "You should water your garden as needed, usually every 7-14 days, depending on the climate and weather conditions.",
+      "bleu": 0.025281168697394947,
+      "rouge1": 0.22857142857142856,
+      "rougeL": 0.22857142857142856,
+      "meteor": 0.27530864197530863
+    },
+    {
+      "instruction": "What are the benefits of eating carrots.",
+      "expected": "Carrots improve vision due to vitamin A, boost immunity with antioxidants, and aid digestion with fiber. They promote overall eye health, protect cells from damage, and help maintain digestive regularity.",
+      "generated": "Carrots are high in beta-carotene, a precursor to vitamin A, which supports healthy vision, skin, and immune function. They are also rich in fiber, vitamin K, and other essential nutrients.",
+      "bleu": 0.03819633968206938,
+      "rouge1": 0.32786885245901637,
+      "rougeL": 0.22950819672131148,
+      "meteor": 0.15
+    },
+    {
+      "instruction": "What are the best natural pest control methods for an organic garden?",
+      "expected": "Use neem oil spray, introduce ladybugs, and plant marigolds to repel pests. Homemade sprays with garlic or soapy water are effective, and keeping the garden clean helps prevent infestations.",
+      "generated": "Organic gardening methods such as companion planting, mulching, and companion planting can help prevent pests. Mulching helps prevent soil erosion, while companion planting combats pests and diseases. In addition, plants like garlic and basil can repel pests.",
+      "bleu": 0.017239283526555123,
+      "rouge1": 0.27272727272727276,
+      "rougeL": 0.15151515151515152,
+      "meteor": 0.24966442953020135
+    },
+    {
+      "instruction": "Can you provide tips for preparing soil for a vegetable garden?",
+      "expected": "Loosen soil and remove weeds, mix in compost for nutrients, and test pH for optimal growth (6.0-7.5 is best). Amend soil with sand for drainage or compost for water retention, and let it rest a week before planting.",
+      "generated": "Yes. To prepare your soil for planting, mix in a few inches of compost, topsoil, and well-rotted manure. Make sure the soil is well-draining, with a pH between 6.0 and 7.5. For larger plants, consider using a balanced soil amendment that includes organic matter, such as compost or aged manure.",
+      "bleu": 0.01238396007360187,
+      "rouge1": 0.4421052631578948,
+      "rougeL": 0.25263157894736843,
+      "meteor": 0.2270975056689342
+    },
+    {
+      "instruction": "How much sunlight do tomato plants need?",
+      "expected": "Tomato plants need 6-8 hours of direct sunlight daily for healthy growth and fruiting.",
+      "generated": "Tomato plants require at least six hours of direct sunlight per day.",
+      "bleu": 0.2134144322916053,
+      "rouge1": 0.4444444444444445,
+      "rougeL": 0.4444444444444445,
+      "meteor": 0.4267310789049919
+    },
+    {
+      "instruction": "What nutrients are most important for leafy greens?",
+      "expected": "Leafy greens need nitrogen, phosphorus, and potassium. Magnesium aids photosynthesis, while calcium supports structure.",
+      "generated": "Leafy greens are rich in vitamins and minerals, including vitamins A, C, and K, folate, iron, and calcium.",
+      "bleu": 0.025281168697394947,
+      "rouge1": 0.25,
+      "rougeL": 0.25,
+      "meteor": 0.17746913580246912
+    },
+    {
+      "instruction": "How do I prevent fungal diseases in my garden?",
+      "expected": "Water at the base to keep leaves dry, space plants for airflow, and remove infected leaves promptly. Use mulch to prevent soil splashing and apply organic fungicides like neem oil to protect plants.",
+      "generated": "To prevent fungal diseases in your garden, take these steps:\n- Keep your soil moist but not waterlogged.\n- Mulch with organic material like leaves, straw, or compost to help retain moisture and suppress weed growth.\n- Prune weeds to promote healthy growth.\n- Fertilize your soil with a balanced fertilizer.\n- Remove weeds by hand or with a hoe.\n- Use companion planting to keep pests away.\n- Water your plants deeply and regularly to avoid waterlogging.\n- Avoid overwatering, which can lead to root rot.\n- Remove any dead plant material to prevent diseases.\n- Regularly inspect your plants for signs of disease.",
+      "bleu": 0.007778526110972647,
+      "rouge1": 0.28125,
+      "rougeL": 0.15625,
+      "meteor": 0.24660434849971602
+    },
+    {
+      "instruction": "What is the nutritional value of spinach?",
+      "expected": "Spinach is rich in vitamins A, C, and K, providing antioxidants, iron, and magnesium.",
+      "generated": "Spinach is a good source of iron, vitamin K, and vitamin A.",
+      "bleu": 0.03834034153732051,
+      "rouge1": 0.5384615384615384,
+      "rougeL": 0.3846153846153846,
+      "meteor": 0.3089774557165861
+    },
+    {
+      "instruction": "Explain the protective health benefits of eating broccoli.",
+      "expected": "Broccoli contains sulforaphane, which has anti-cancer properties. It's rich in vitamins C and K for immune and bone health. Fiber aids digestion, and antioxidants reduce inflammation.",
+      "generated": "Broccoli contains sulforaphane, a compound that has been shown to reduce inflammation, lower cholesterol levels, and improve gut health. It also contains high levels of vitamin C, which helps to protect against oxidative stress and supports immune function.",
+      "bleu": 0.03259631698411773,
+      "rouge1": 0.4242424242424242,
+      "rougeL": 0.2727272727272727,
+      "meteor": 0.22058823529411764
+    },
+    {
+      "instruction": "What are the best vegetables to grow in a small garden?",
+      "expected": "Cherry tomatoes, bell peppers, spinach, and radishes grow well in small spaces.",
+      "generated": "Vegetables that grow well in a small garden include beans, squash, tomatoes, peppers, cucumbers, lettuce, carrots, radishes, and herbs such as parsley and basil.",
+      "bleu": 0.04840461225938483,
+      "rouge1": 0.4444444444444444,
+      "rougeL": 0.2222222222222222,
+      "meteor": 0.43367346938775514
+    },
+    {
+      "instruction": "How can I keep my indoor plants healthy during the winter?",
+      "expected": "Place plants near south-facing windows, reduce watering, and increase humidity with a humidifier or water tray. Keep them away from heating vents and rotate for even light exposure. Clean leaves to maximize light absorption.",
+      "generated": "To keep your indoor plants healthy during the winter, consider the following:\n\n1. Keep the temperature at around 60\u00b0F (15\u00b0C) to prevent frost damage.\n\n2. Choose a location with a south-facing window to allow for indirect sunlight.\n\n3. Water your plants sparingly during the winter months, and avoid overwatering.\n\n4. Provide proper lighting, either through a bright window or a grow light.\n\n5. Use a humidifier or mist your plants to help them retain moisture.\n\n6. Add a layer of mulch around your plants to conserve moisture.\n\n7. Use a container with drainage holes to prevent waterlogging.\n\n8. Monitor your plants regularly and provide them with fresh soil every few weeks to keep them healthy.\n\n9. Consider starting your plants indoors during the colder months to help them acclimate to the new environment.\n\n10. Proper maintenance and care of your indoor plants will help them grow and thrive even during the winter months.</s>",
+      "bleu": 0.009276098368654624,
+      "rouge1": 0.1875,
+      "rougeL": 0.13541666666666666,
+      "meteor": 0.19394819656257561
+    },
+    {
+      "instruction": "What are effective ways to prevent aphids from infesting my garden?",
+      "expected": "Introduce ladybugs, spray with neem oil, and plant garlic or chives nearby. Use a strong water spray to dislodge aphids and regularly check plants, especially under leaves, to catch them early.",
+      "generated": "One effective way to prevent aphids from infesting your garden is to use a natural repellent, such as neem oil or a mixture of neem oil and aphid repellent spray. Additionally, you can use natural repellents such as garlic, basil, or mint to deter aphids.",
+      "bleu": 0.006651640607160381,
+      "rouge1": 0.2894736842105263,
+      "rougeL": 0.18421052631578946,
+      "meteor": 0.1234567901234568
+    },
+    {
+      "instruction": "Explain why hydration is important for plant growth.",
+      "expected": "Hydration supports photosynthesis, nutrient transport, and cell structure.",
+      "generated": "Hydration is important for plant growth because it helps plants maintain optimal water balance. Dehydrated plants are more susceptible to drought stress and may show signs of wilting. To maintain optimal water balance, plants need to absorb water from the soil or from their roots, and this water should be replenished by evaporation.",
+      "bleu": 0.00410726430147258,
+      "rouge1": 0.06557377049180328,
+      "rougeL": 0.06557377049180328,
+      "meteor": 0.08
+    },
+    {
+      "instruction": "What are some natural fertilizers I can use for my garden?",
+      "expected": "Compost, aged manure, bone meal, and blood meal are natural fertilizers. Fish emulsion adds balanced nutrients, and worm castings improve soil structure.",
+      "generated": "For acid-loving plants, such as tomatoes and basil, try adding a few tablespoons of liquid seaweed or manure to your soil. For high-potassium plants, like tomatoes, try using composted eggshells. For high-nitrogen plants, such as peppers and eggplants, try adding a small amount of compost.",
+      "bleu": 0.004863083928997274,
+      "rouge1": 0.14285714285714288,
+      "rougeL": 0.05714285714285715,
+      "meteor": 0.0411522633744856
+    },
+    {
+      "instruction": "How do I protect my vegetable garden from extreme heat?",
+      "expected": "Use shade cloths, mulch to retain moisture, and water deeply in the morning. Space plants for better airflow and avoid fertilizing during heat waves to reduce stress on plants.",
+      "generated": "Protect your vegetable garden from extreme heat by using raised beds, which can help prevent sunburn, and by planting vegetables that are drought-tolerant.",
+      "bleu": 0.00758775560921595,
+      "rouge1": 0.1509433962264151,
+      "rougeL": 0.11320754716981132,
+      "meteor": 0.0704225352112676
+    },
+    {
+      "instruction": "How can I start a container garden for herbs?",
+      "expected": "Choose containers with drainage holes and use quality potting mix. Plant herbs like basil, rosemary, and thyme. Ensure they get 6 hours of sunlight and water when soil is dry to the touch.",
+      "generated": "Starting a container garden for herbs is a simple process. Choose a container with drainage holes, preferably one that's 2-3 times larger than the plants. Add soil and plant the herbs, following the guidelines for spacing and planting depth. Water regularly, but avoid overwatering, as it can rot the roots. Keep the container in a sunny spot and avoid direct sunlight. The herbs will grow in your container garden, and you can harvest them as needed.",
+      "bleu": 0.007549055897021559,
+      "rouge1": 0.27027027027027023,
+      "rougeL": 0.1981981981981982,
+      "meteor": 0.23866547512660113
+    },
+    {
+      "instruction": "What is crop rotation, and why is it beneficial?",
+      "expected": "Crop rotation involves planting different crops each season to prevent nutrient depletion and reduce pests. For example, plant legumes after leafy greens to restore nitrogen levels. This practice promotes soil health.",
+      "generated": "Crop rotation is the practice of planting different crops in different parts of the same field. This helps to prevent soil-borne pests and diseases from spreading between crops. It also promotes the growth of beneficial insects and wildlife, and reduces the need for synthetic pesticides.",
+      "bleu": 0.03330561328164072,
+      "rouge1": 0.38961038961038963,
+      "rougeL": 0.2597402597402597,
+      "meteor": 0.27969537584922194
+    },
+    {
+      "instruction": "How do I know if my soil needs more nutrients?",
+      "expected": "Signs of nutrient-poor soil include yellowing leaves, stunted growth, and poor yields. Conduct a soil test to check pH and nutrient levels. Add compost or fertilizers based on test results to enrich the soil.",
+      "generated": "If your soil test results show a lack of iron, calcium, magnesium, or phosphorus, you may need to add some fertilizer.",
+      "bleu": 0.016918591123123314,
+      "rouge1": 0.3214285714285714,
+      "rougeL": 0.17857142857142855,
+      "meteor": 0.16270068807339447
+    },
+    {
+      "instruction": "Why is vitamin C important in a diet?",
+      "expected": "Vitamin C boosts the immune system, protects cells with antioxidants, supports collagen production for skin health, and aids in iron absorption. Regular intake helps prevent scurvy and enhances overall recovery.",
+      "generated": "Vitamin C is important in a diet for its role in the immune system. It helps boost white blood cell activity, making it an effective antibacterial agent.",
+      "bleu": 0.0214859705367621,
+      "rouge1": 0.3508771929824561,
+      "rougeL": 0.2105263157894737,
+      "meteor": 0.23174128112399717
+    },
+    {
+      "instruction": "What is companion planting, and how does it help my garden?",
+      "expected": "Companion planting involves growing plants together for mutual benefits, like basil with tomatoes to repel pests. Marigolds deter nematodes.",
+      "generated": "Companion planting is a practice of planting plants in a garden to support each other, such as planting basil with tomatoes or parsley with carrots. By planting companion plants together, you help them grow together and share resources, reducing the need for extra pesticides and fertilizers.",
+      "bleu": 0.028814963358243115,
+      "rouge1": 0.3076923076923077,
+      "rougeL": 0.1846153846153846,
+      "meteor": 0.2304147465437788
+    },
+    {
+      "instruction": "What protective health factors do leafy greens offer?",
+      "expected": "Leafy greens provide vitamins A, C, and K for immune support and bone health. They are rich in antioxidants that fight inflammation and fiber that aids digestion and blood sugar management, promoting overall health.",
+      "generated": "Leafy greens, such as spinach, collard greens, and kale, are rich in antioxidants, vitamins, and minerals, including folate, iron, calcium, and vitamin K. These foods can help protect against chronic diseases, such as cancer, heart disease, and Alzheimer's disease.",
+      "bleu": 0.03000487960856969,
+      "rouge1": 0.3243243243243243,
+      "rougeL": 0.24324324324324323,
+      "meteor": 0.21565217391304348
+    },
+    {
+      "instruction": "What is the best way to store harvested vegetables?",
+      "expected": "Store leafy greens wrapped in damp paper towels in the fridge. Root vegetables do well in a cool, dark place or crisper drawer. Keep tomatoes at room temperature to maintain flavor and texture.",
+      "generated": "To store harvested vegetables, allow them to dry completely, then wrap them in paper towels or plastic wrap. This will prevent the vegetables from wilting or becoming moldy.",
+      "bleu": 0.016250365590672486,
+      "rouge1": 0.2950819672131148,
+      "rougeL": 0.26229508196721313,
+      "meteor": 0.19553846153846152
+    },
+    {
+      "instruction": "What can I do to encourage pollinators in my garden?",
+      "expected": "Plant native flowers with varied bloom times to attract pollinators. Avoid pesticides and provide water sources. Flowers like lavender and sunflowers attract bees and butterflies, supporting biodiversity.",
+      "generated": "To encourage pollinators, plant a variety of flowers and herbs, such as marigolds, lavender, thyme, parsley, mint, and basil. Planting these flowers will attract beneficial insects, such as bees, butterflies, and hummingbirds. You can also attract pollinators with an attractive garden design, such as a colorful border, or by incorporating a water feature, such as a pond or fountain.",
+      "bleu": 0.005357656987495008,
+      "rouge1": 0.3488372093023256,
+      "rougeL": 0.18604651162790697,
+      "meteor": 0.1986754966887417
+    },
+    {
+      "instruction": "What are the signs of overwatering my plants?",
+      "expected": "Signs include yellowing leaves, wilting despite moist soil, and root rot. Mushy stems and fungus on soil are also indicators. Ensure proper drainage and water only when the topsoil is dry to prevent overwatering.",
+      "generated": "Overwatering can cause root rot, which can lead to a plant death. Check your soil and plants regularly, making sure the top inch is dry before watering again.",
+      "bleu": 0.01568023686032001,
+      "rouge1": 0.3225806451612903,
+      "rougeL": 0.22580645161290322,
+      "meteor": 0.15929079341317368
+    },
+    {
+      "instruction": "What health benefits do tomatoes offer?",
+      "expected": "Tomatoes provide vitamins C and K, potassium, and lycopene, an antioxidant linked to reduced risks of heart disease and cancer. They support immune health and bone strength and are low in calories.",
+      "generated": "Tomatoes are rich in vitamin C, potassium, and vitamin A, as well as antioxidants like lycopene, which may protect against cancer and heart disease. They also have a low glycemic index and may help regulate blood sugar levels.",
+      "bleu": 0.01578553134144601,
+      "rouge1": 0.45714285714285713,
+      "rougeL": 0.2857142857142857,
+      "meteor": 0.19938650306748468
+    },
+    {
+      "instruction": "How do I start composting at home?",
+      "expected": "Combine green materials (fruit scraps) and brown materials (leaves) in a bin. Keep the pile moist and aerate it weekly. Balance greens and browns for optimal decomposition. Finished compost enriches garden soil.",
+      "generated": "Start by collecting organic materials such as food scraps, grass clippings, and leaves. Collect them in a bin or compost pile and add a handful of straw or sawdust. The composting process takes time, so start with a small bin and gradually increase the size. Make sure to cover the bin with a lid or screen to prevent pests and rodents from getting in.",
+      "bleu": 0.00876496357013749,
+      "rouge1": 0.25,
+      "rougeL": 0.20833333333333334,
+      "meteor": 0.14204545454545456
+    },
+    {
+      "instruction": "What herbs grow well indoors year-round?",
+      "expected": "Herbs like mint, basil, chives, and parsley can grow indoors year-round with proper light and care.",
+      "generated": "Several herbs, including basil, parsley, chives, and thyme, are great options for year-round growing.",
+      "bleu": 0.031139497438282805,
+      "rouge1": 0.5,
+      "rougeL": 0.37500000000000006,
+      "meteor": 0.12658227848101264
+    },
+    {
+      "instruction": "How should I water lettuce for optimal growth?",
+      "expected": "Lettuce prefers consistent moisture in the soil. It\u2019s best to water lettuce regularly to keep the soil evenly moist, especially during warm weather to prevent bolting.",
+      "generated": "Water lettuce thoroughly every 2-3 days. It needs deep watering to prevent root rot.",
+      "bleu": 0.014186216087246455,
+      "rouge1": 0.23809523809523808,
+      "rougeL": 0.23809523809523808,
+      "meteor": 0.15120967741935487
+    },
+    {
+      "instruction": "How can I make my own organic fertilizer?",
+      "expected": "You can create organic fertilizer using compost, manure, and crushed eggshells for added nutrients.",
+      "generated": "To make your own organic fertilizer, you can use a combination of compost, cow manure, and organic matter. Mix equal parts of compost and cow manure and add a tablespoon of organic matter per gallon of water. Follow the instructions on the fertilizer you use, as some require different quantities of compost or organic matter.",
+      "bleu": 0.009252921910030762,
+      "rouge1": 0.23188405797101444,
+      "rougeL": 0.17391304347826086,
+      "meteor": 0.2209944751381215
+    }
+  ]
+}
