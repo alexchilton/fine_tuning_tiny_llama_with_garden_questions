@@ -24,7 +24,7 @@ There are clear improvements in most metrics:
 
 Looking at the examples, the fine-tuned model gives more specific gardening advice while the base model tends to provide more generic information. For instance, in the "easiest vegetables" question, the fine-tuned model immediately lists specific vegetables, while the base model gives a general definition.
 
-Your LoRA fine-tuning has successfully specialized the model for gardening advice, particularly improving:
+The LoRA fine-tuning has successfully specialized the model for gardening advice, particularly improving:
 1. Lexical overlap with expert answers (ROUGE/BLEU)
 2. Structure of responses for gardening questions
 3. Domain-specific vocabulary usage
