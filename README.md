@@ -1,32 +1,94 @@
-# Fined tuned llama llm on Garden questions
+# LoRA Fine-Tuning TinyLlama on Garden Questions
+**Domain-specific fine-tuning of a 1.1B parameter LLM for horticultural Q&A**
 
-I saw an interesting prject on kaggle - or rather my wife did! 
+Fine-tuning **TinyLlama-1.1B-Chat** on a custom gardening dataset using LoRA (Low-Rank Adaptation), with quantitative evaluation comparing the fine-tuned model against the base model baseline.
 
-I took tiny llama and trained a fine tuned model on 993 questions and answers, added metrics to check the results.
-Nothing too fancy but it worked 
+---
 
-The implementation is using a lora matrix of rank 4. Trained for 3 epochs
-
-Comparing results, we can see your LoRA fine-tuning definitely improved performance over the base model:
+## Results
 
 | Metric | Base TinyLlama | LoRA Fine-tuned | Improvement |
-|--------|---------------|----------------|-------------|
-| BLEU   | 0.0069        | 0.0254         | +268%       |
-| ROUGE-1| 0.1780        | 0.3155         | +77%        |
-| ROUGE-L| 0.1195        | 0.2194         | +84%        |
-| METEOR | 0.2048        | 0.2054         | +0.3%       |
+|--------|---------------|-----------------|-------------|
+| BLEU | 0.0069 | 0.0254 | **+268%** |
+| ROUGE-1 | 0.1780 | 0.3155 | **+77%** |
+| ROUGE-L | 0.1195 | 0.2194 | **+84%** |
+| METEOR | 0.2048 | 0.2054 | +0.3% |
 
-There are clear improvements in most metrics:
-- BLEU score improved dramatically (nearly 4x better)
-- ROUGE-1 improved by 77% 
-- ROUGE-L improved by 84%
-- METEOR stayed essentially the same
+The fine-tuned model provides concise, domain-specific answers rather than verbose generic responses. For example, when asked about tomato sunlight requirements, the base model gives a lengthy explanation while the fine-tuned model answers directly: *"Tomato plants require at least six hours of direct sunlight per day."*
 
-Looking at the examples, the fine-tuned model gives more specific gardening advice while the base model tends to provide more generic information. For instance, in the "easiest vegetables" question, the fine-tuned model immediately lists specific vegetables, while the base model gives a general definition.
+---
 
-The LoRA fine-tuning has successfully specialized the model for gardening advice, particularly improving:
-1. Lexical overlap with expert answers (ROUGE/BLEU)
-2. Structure of responses for gardening questions
-3. Domain-specific vocabulary usage
+## Dataset
 
-The METEOR score staying nearly the same suggests that both models maintain similar semantic understanding, but your fine-tuned model produces text that more closely matches expert gardening advice in terms of specific content and terminology.
+**939 gardening Q&A pairs** (`dataset_plants_v5.jsonl`) covering:
+- Plant nutrition and soil management
+- Pest and disease prevention
+- Specific vegetable growing advice
+- Horticultural techniques
+
+90/10 train/test split. Additional held-out test set of 30 examples for evaluation.
+
+---
+
+## Approach
+
+**Model:** `TinyLlama/TinyLlama-1.1B-Chat-v1.0`  
+**Technique:** LoRA — only query and value projection weights adapted, keeping the base model frozen
+
+**LoRA config:**
+```
+r=4 · alpha=16 · target_modules=[q_proj, v_proj] · dropout=0.05
+```
+
+**Training:**
+```
+epochs=3 · batch_size=2 · grad_accumulation=4 · lr=1e-4 · max_length=256
+```
+
+Optimised for **Mac Silicon (MPS)** with FP32 precision.
+
+**Prompt format:**
+```
+<|user|>
+{instruction}
+<|assistant|>
+{response}
+<|endoftext|>
+```
+
+---
+
+## Repository Structure
+
+```
+├── lora_gardening.py                  # Training script
+├── evaluate_lora.py                   # Fine-tuned model evaluation
+├── evaluate_without_lora.py           # Base model baseline evaluation
+├── analysis.py                        # Dataset token length analysis
+├── dataset_plants_v5.jsonl            # Training dataset (939 examples)
+├── GardenWise_test_dataset_6.jsonl    # Test dataset (30 examples)
+├── evaluation_results.json            # LoRA evaluation metrics
+├── base_model_evaluation_results.json # Base model metrics
+└── requirements.txt
+```
+
+---
+
+## Running
+
+```bash
+pip install -r requirements.txt
+
+# Train
+python lora_gardening.py
+
+# Evaluate fine-tuned vs base
+python evaluate_lora.py
+python evaluate_without_lora.py
+```
+
+---
+
+## Stack
+
+`transformers` · `peft` · `torch` (MPS) · `datasets` · `nltk` · `rouge-score`
